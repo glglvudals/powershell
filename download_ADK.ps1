@@ -11,6 +11,6 @@ OptionID.DeploymentTools
 # Install ADK
 Start-Process -FilePath C:\Users\kh\Downloads\ADK.exe -ArgumentList "/quiet /norestart /features OptionID.DeploymentTools" -Wait
 Copy-Item -Path "D:\bootmgr" -Destination "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\WSIM"
-Start-Process C:\Windows\System32\Robocopy.exe -ArgumentList "D:\sources\ C:\ /E /ZB /DCOPY:DAT /COPYALL /R:1 /W:1 /V /LOG:log.txt"
+Start-Process C:\Windows\System32\Robocopy.exe -ArgumentList "D:\sources\ C:\gogo /MIR /DCOPY:DAT /COPYALL /R:20 /W:15 /LOG:\log.txt"
 
 robocopy “c:\aa” ” c:\bb ” /S /E /COPY:DAT /PURGE /MIR /DCOPY:DAT /R:1 /W:1 /NS /NFL /NDL /NP /LOG:”C:\RESULT.LOG
